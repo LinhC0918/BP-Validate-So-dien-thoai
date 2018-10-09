@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate So dien thoai</title>
+</head>
+<body>
+    <script>
+        function ValidatePhoneNumber(str) {
+            var regexp = /^[0-9]{2}(-[0][0-9]{9})$/;
+            if (regexp.test(str)){
+                console.log('Valid');
+            } else
+                console.log('Not Valid');
+        }
+        var string = '84-0978489648';
+        ValidatePhoneNumber(string);
+        var string = '84-9876543210';
+        ValidatePhoneNumber(string);
+        var string = '840023456789';
+        ValidatePhoneNumber(string);
+    </script>
+</body>
+</html>
